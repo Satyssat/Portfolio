@@ -41,9 +41,13 @@ nav ul li {
   margin-left: 20px;
   cursor: pointer;
   border-bottom: 1px white solid;
+  color: black;
 }
 nav ul li:hover {
   border-bottom-color: black;
+}
+nav ul a {
+  text-decoration: none;
 }
 
 .page-content {
@@ -123,6 +127,19 @@ nav ul li:hover {
   color: gray;
   font-size: 13px;
 }
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  margin-top: 5%;
+  flex-wrap: wrap;
+  color: white;
+  padding: 10px;
+}
+footer .colonne p {
+  font-size: 15px;
+  color: #ccc;
+}
 @media screen and (max-width: 700px) {
   nav {
     justify-content: center;
@@ -132,6 +149,17 @@ nav ul li:hover {
   }
   .page-content header {
     margin-top: 10%;
+    max-width: 100%;
+  }
+  .page-content .projects-section {
+    margin-top: 15%;
+  }
+  .page-content .projects-section h1 {
+    font-size: 1.5em;
+  }
+  .page-content .projects-section .projects .project {
+    margin-right: 0;
+    margin-bottom: 20px;
     max-width: 100%;
   }
 }
