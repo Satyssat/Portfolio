@@ -31,6 +31,10 @@ nav .profile h1 {
   font-size: 15px;
   margin-left: 10px;
 }
+nav .profile a {
+  text-decoration: none;
+  color: grey;
+}
 
 nav ul {
   display: flex;
@@ -92,10 +96,6 @@ nav ul a {
 .page-content .presentation-image img {
   max-width: 100%;
   height: auto;
-  transition: filter 0.5s;
-}
-.page-content .presentation-image img:hover {
-  filter: brightness(50%);
 }
 .page-content .projects-section {
   margin-top: 6%;
@@ -140,6 +140,80 @@ footer .colonne p {
   font-size: 15px;
   color: #ccc;
 }
+
+/* -----------------------------cv.html-------------------------------------- */
+
+.cv-presentation {
+  height: auto;
+  text-align: center;
+  margin: 0 5%;
+}
+
+.cv-presentation .cv-image iframe {
+  width: 100%;
+  height: 800px;
+}
+
+/* -----------------------------github.html-------------------------------------- */
+
+.github-presentation {
+  border: 1px solid black;
+  margin-top: 5%;
+}
+.github-presentation .lien-github {
+  display: flex;
+  justify-content: space-around;
+  border: red 1px solid;
+}
+.github-presentation .contenu-github {
+  font-size: 15px;
+  font-family: "Noto Sans", "Arial Narrow", Arial, sans-serif;
+}
+.btn-github {
+  border-radius: 15px;
+  border: none;
+  background: black;
+  width: 110px;
+  height: 50px;
+  margin-top: 40px;
+  border: yellow 3px solid;
+}
+.btn-github a {
+  text-decoration: none;
+}
+.btn-github p {
+  color: white;
+  font-size: 15px;
+  font-family: "Noto Sans", "Arial Narrow", Arial, sans-serif;
+}
+
+/* -----------------------------projets.html-------------------------------------- */
+.presentation-projets {
+  margin-top: 4%;
+}
+.titre-projets {
+  text-align: center;
+}
+.exemple-projets {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.exemple-projets .card {
+  background-color: RGBA(162, 142, 144, 0.4);
+  border: solid 2px brown;
+  border-radius: 10px;
+  padding: 15px;
+}
+.exemple-projets .card p {
+  font-family: "oswald", "sans-serif";
+  font-size: 24px;
+}
+.exemple-projets .card img {
+  border-radius: 10px;
+}
+/* -----------------------------responsive-------------------------------------- */
+
 @media screen and (max-width: 700px) {
   nav {
     justify-content: center;
@@ -161,5 +235,11 @@ footer .colonne p {
     margin-right: 0;
     margin-bottom: 20px;
     max-width: 100%;
+  }
+  footer {
+    justify-content: flex-start;
+  }
+  footer .colonne {
+    width: 80%;
   }
 }
